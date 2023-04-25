@@ -10,6 +10,7 @@ volume, surface_area = width * length * depth, width * length
 water_level = [water_volume / surface_area]
 heat_capacity_water, density_water = 4186, 1000
 
+
 days = int(input("Enter the number of days to calculate: "))
 
 
