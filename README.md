@@ -1,12 +1,12 @@
-## Abiotic factors floodplain Model
+# Abiotic factors floodplain Model
 This model calculates the water level and temperature in a basin over a specified number of days based on inputs for inflow, outflow, solar radiation, air temperature, and other parameters. The model allows you to specify different scenarios by providing external CSV files for the input parameters.
 
-# Getting Started
+## Getting Started
 To run the model, enter the number of days to calculate when prompted. You will then be prompted to either supply CSV files or enter single values for the inflow, outflow, solar radiation, air temperature, wind speed, and humidity parameters for each day. If you choose to supply CSV files, you will be presented with a file dialog to select the files.
 
 The model will output the final water volume, water level, and water temperature in the basin after the specified number of days. It will also plot the water level and temperature over time.
 
-# Parameters
+## Parameters
 The model uses the following parameters:
 
 rho_w - Density of water (g/cm^3)
@@ -25,11 +25,13 @@ Water vapor pressure (hPa) - The atmospheric water vapor pressure
 Wind velocity (m/s) - The wind speed
 Saturation water vapor pressure (hPa) - The saturation water vapor pressure at the air temperature
 
-# Output
+## Output
 The model outputs the following:
 
 Total water amount (m^3) - The total volume of water in the basin at the end of the time period
 Water level (cm) - The depth of the water in the basin at the end of the time period
 Water temperature (°C) - The temperature of the water in the basin at the end of the time period
+
 Two plots showing water level and temperature over time
+
 The model allows you to specify different scenarios by providing external CSV files for the input parameters.
