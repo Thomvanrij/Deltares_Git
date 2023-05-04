@@ -53,12 +53,18 @@ def get_data(filename_prompt, value_prompt, column_name):
 # Get the inflow, outflow, solar radiation, and outside temperature data
 inflow_data = get_data("Do you want to supply an inflow CSV file? (y/n): ", "Inflow", "Inflow(cm)")
 outflow_data = get_data("Do you want to supply an outflow CSV file? (y/n): ", "Outflow", "Outflow(cm)")
-globrad_data = get_data("Do you want to supply an global radiation CSV file? (y/n): ", "Globrad", "Global radiation (J/cm^2*h)")
+global_radiation_data = get_data("Do you want to supply an global radiation CSV file? (y/n): ", "global_radiation", "Global radiation ("
+                                                                                                  "J/cm^2*h)")
 T_L_data = get_data("Do you want to supply an Air temperature CSV file? (y/n): ", "T_L", "Air temp (°C)")
-E_L_data = get_data("Do you want to supply a Water vapor pressure CSV file? (y/n): ", "E_L", "Water vapor pressure (hPa)")
+E_L_data = get_data("Do you want to supply a Water vapor pressure CSV file? (y/n): ", "E_L", "Water vapor pressure ("
+                                                                                             "hPa)")
 mu_data = get_data("Do you want to supply a Wind velocity CSV file? (y/n): ", "mu", "Wind velocity (m/s)")
-E_w_data = get_data("Do you want to supply a Saturation water vapor pressure CSV file? (y/n): ", "E_w", "Saturation water vapor pressure (hPa)")
-e_L_data = get_data("Do you want to supply a Water vapor pressure CSV file? (y/n): ", "e_L", "Water vapor pressure (hPa)")
+E_w_data = get_data("Do you want to supply a Saturation water vapor pressure CSV file? (y/n): ", "E_w", "Saturation "
+                                                                                                        "water vapor "
+                                                                                                        "pressure ("
+                                                                                                        "hPa)")
+e_L_data = get_data("Do you want to supply a Water vapor pressure CSV file? (y/n): ", "e_L", "Water vapor pressure ("
+                                                                                             "hPa)")
 
 
 # Initialize a flag to track if the water level has dropped to zero
@@ -69,7 +75,7 @@ for day in range(1, days):
     # Get the inflow, outflow, solar radiation, and outside temperature for the current day
     inflow = inflow_data.loc[inflow_data['Day'] == day, 'Inflow(cm)'].values[0]
     outflow = outflow_data.loc[outflow_data['Day'] == day, 'Outflow(cm)'].values[0]
-    globrad = globrad_data.loc[globrad_data['Day'] == day, 'Global radiation (J/cm^2*h)'].values[0]
+    global_radiation = globrad_data.loc[globrad_data['Day'] == day, 'Global radiation (J/cm^2*h)'].values[0]
     T_L = T_L_data.loc[T_L_data['Day'] == day, 'Air temp (°C)'].values[0]
     E_L = E_L_data.loc[E_L_data['Day'] == day, 'Water vapor pressure (hPa)'].values[0]
     mu = mu_data.loc[mu_data['Day'] == day, 'Wind velocity (m/s)'].values[0]
@@ -81,7 +87,7 @@ for day in range(1, days):
     # Calculate the new water level
     water_depth = z_w[day - 1] + water_level_change
 
-    K_short_wave = 0.85 * globrad
+    K_short_wave = 0.85 * global_radiation
     L_up = epsilon * 2.06e-8 * (t_w[day - 1] + 273) ** 4
     L_down = 2.06e-8 * (0.83 - 0.25 * 10 ** (-0.08 * e_L)) * (T_L + 273) ** 4
     Q_star = K_short_wave - L_up + L_down
