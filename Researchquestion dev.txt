@@ -1,0 +1,30 @@
+Research objective: Investigating the impact of local abiotic and biotic factors on trophic network establishment and biomass accumulation in rewetted floodplains
+
+RQ1: What constitutes the existing knowledge base and knowledge gaps pertaining to the ecological consequences of floodplain rewetting initiatives?
+
+RQ2: Which critical variables and underlying processes contribute to the rapid emergence and growth of trophic networks and biomass within restored floodplains?
+
+RQ3: To what extent can computational modeling and geographic information systems accurately forecast and elucidate the repercussions of floodplain rewetting on the comprehension of floodplain ecosystem dynamics?
+
+-----------------
+Research objective: How do differences in local abiotic and biotic influence the foodweb origination and build up and biomass development in rewetted floodplains
+
+RQ1: What are the current available knowns and unkowns of ecological effects of rewetting of floodplains
+
+RQ2: what are the imporant variables and mechanisms of fast development of a new foodweb and biomass in rewetted floodplains. 
+
+RQ3: Can numerical models or geographical information systems, accurately predict and analyze the effects of floodplain rewetting and increase understanding of the floodplain ecosystems. 
+
+---------------------------
+\ResearchObjective{How do differences in local conditions, timing, and size of flooding/ high tide events influence the food web/biomass in floodplains that have been rewetted?}
+
+\ResearchQuestion{1}{What is the current understanding of the ecological benefits and potential risks of floodplain rewetting, and what knowledge gaps exist in the literature?}
+\ResearchQuestion{2}{What are the specific ways in which floodplain rewetting supports the food web and increases biomass, and how do these benefits vary across different floodplain ecosystems?}
+\ResearchQuestion{3}{How do specific abiotic factors, such as water depth, nutrient availability, and soil characteristics, affect the establishment and development of the food web in rewetted floodplains?}
+\ResearchQuestion{4}{How do variations in the timing, duration, and intensity of flooding events influence the composition and productivity of the food web in rewetted floodplains, and what are the underlying mechanisms?}
+\ResearchQuestion{5}{To what extent can models and GIS be used to accurately predict and analyze the effects of floodplain rewetting on the food web and biomass in rewetted floodplains, and what are the limitations and uncertainties associated with these methods?}
+
+
+
+
+

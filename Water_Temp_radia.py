@@ -53,7 +53,11 @@ def get_data(filename_prompt, value_prompt, column_name):
 # Get the inflow, outflow, solar radiation, and outside temperature data
 inflow_data = get_data("Do you want to supply an inflow CSV file? (y/n): ", "Inflow", "Inflow(cm)")
 outflow_data = get_data("Do you want to supply an outflow CSV file? (y/n): ", "Outflow", "Outflow(cm)")
+<<<<<<< Updated upstream
 global_radiation_data = get_data("Do you want to supply an global radiation CSV file? (y/n): ", "global_radiation", "Global radiation ("
+=======
+globrad_data = get_data("Do you want to supply an global radiation CSV file? (y/n): ", "globrad", "Global radiation ("
+>>>>>>> Stashed changes
                                                                                                   "J/cm^2*h)")
 T_L_data = get_data("Do you want to supply an Air temperature CSV file? (y/n): ", "T_L", "Air temp (°C)")
 E_L_data = get_data("Do you want to supply a Water vapor pressure CSV file? (y/n): ", "E_L", "Water vapor pressure ("
