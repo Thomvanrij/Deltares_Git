@@ -1,4 +1,4 @@
-# Abiotic factors floodplain Model
+# WILT
 This model calculates the water level and temperature in a basin over a specified number of days based on inputs for inflow, outflow, solar radiation, air temperature, and other parameters. The model allows you to specify different scenarios by providing external CSV files for the input parameters.
 
 ## Getting Started
