@@ -1,37 +1,28 @@
-# WILT
-This model calculates the water level and temperature in a basin over a specified number of days based on inputs for inflow, outflow, solar radiation, air temperature, and other parameters. The model allows you to specify different scenarios by providing external CSV files for the input parameters.
+Here is a draft GitHub readme for the project:
 
-## Getting Started
-To run the model, enter the number of days to calculate when prompted. You will then be prompted to either supply CSV files or enter single values for the inflow, outflow, solar radiation, air temperature, wind speed, and humidity parameters for each day. If you choose to supply CSV files, you will be presented with a file dialog to select the files.
+# Floodplain Rewetting Modeling
 
-The model will output the final water volume, water level, and water temperature in the basin after the specified number of days. It will also plot the water level and temperature over time.
+This repository contains code to model floodplain rewetting dynamics using Google Earth Engine (GEE) and Python.
 
-## Parameters
-The model uses the following parameters:
+## GEE Scripts
 
-rho_w - Density of water (g/cm^3)
-C_w - Specific heat capacity of water (J/(g*K))
-epsilon - Surface emissivity
-Basin dimensions (width, length, depth)
-Initial water temperature
-Initial water volume
-It requires inputs for the following for each day:
+The GEE scripts are written in Javascript and can be used to analyze any water area.
 
-Inflow (cm) - The flow of water into the basin
-Outflow (cm) - The flow of water out of the basin
-Global radiation (J/cm^2*h) - The solar radiation reaching the water surface
-Air temp (°C) - The ambient air temperature
-Water vapor pressure (hPa) - The atmospheric water vapor pressure
-Wind velocity (m/s) - The wind speed
-Saturation water vapor pressure (hPa) - The saturation water vapor pressure at the air temperature
+`inundation_area.js` - Calculates the inundation area and extent over time for a specified region.
 
-## Output
-The model outputs the following:
+`water_temperature.js` - Estimates water temperature for an inundated area based on thermal data.
 
-Total water amount (m^3) - The total volume of water in the basin at the end of the time period
-Water level (cm) - The depth of the water in the basin at the end of the time period
-Water temperature (°C) - The temperature of the water in the basin at the end of the time period
+## Python Scripts 
 
-Two plots showing water level and temperature over time
+The Python scripts model nutrient-phytoplankton-zooplankton (NPZ) dynamics based on abiotic factors like evaporation and radiation.
 
-The model allows you to specify different scenarios by providing external CSV files for the input parameters.
+`wilt.py` - Uses water vapor, global radiation, air temperature etc. to simulate water temperature and level decrease over time in a basin.
+
+`npzaf.py` - Takes output from wilt.py and models NPZ concentrations based on initial values. 
+
+## Usage
+
+The GEE scripts can be run in the GEE Code Editor after authenticating. The Python scripts require the packages listed in requirements.txt and input data as specified in the scripts.
+
+
+Please contact Thom van Rij at thomvanrij@gmail.com with any questions!
